@@ -4,7 +4,7 @@ import { TToDoItem } from "./components/ToDoItem";
 import AddTask from "./components/AddTask";
 import { useEffect, useState } from "react";
 import moment from "moment";
-import Timer from "./Timer";
+import Timer from "./components/Timer";
 
 function App() {
   const [tasks, setTasks] = useState<TToDoItem[]>([]);

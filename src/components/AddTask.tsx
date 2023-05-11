@@ -1,5 +1,5 @@
 import { useState } from "react";
-import plus from "./assets/plus.png";
+import plus from "../assets/plus.png";
 import { TToDoItem } from "./ToDoItem";
 import { v4 as uuid } from "uuid";
 import Datepicker from "./Datepicker";

@@ -1,5 +1,5 @@
 import calendar from "../assets/calendar.png";
-import "./App.css";
+import "../App.css";
 import moment from "moment";
 import { useState } from "react";
 import trash from "../assets/Trash.svg";

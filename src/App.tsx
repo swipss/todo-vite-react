@@ -23,6 +23,12 @@ function App() {
     <>
       {isPomodoroOpen && <Timer setIsPomodoroOpen={setIsPomodoroOpen} />}
       <div className="main-card">
+        <p
+          className="pomodoro-text"
+          onClick={() => setIsPomodoroOpen(!isPomodoroOpen)}
+        >
+          Try the Pomodoro Timer to complete your tasks more efficiently
+        </p>
         <p className="today-date">{moment().format("ddd, MMM D")}</p>
         <div className="heading-container">
           <h1 className="heading">My Tasks</h1>
@@ -32,12 +38,6 @@ function App() {
               : "No tasks"}
           </p>
         </div>
-        {/* <p
-          className="pomodoro-text"
-          onClick={() => setIsPomodoroOpen(!isPomodoroOpen)}
-        >
-          Try the Pomodoro Timer to complete your tasks more efficiently
-        </p> */}
         <div className="filter-container">
           <button
             className={selectedFilter === "all" ? "filter-active" : ""}
